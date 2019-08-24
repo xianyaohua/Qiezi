@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/dip20"
+    android:orientation="vertical">
+
+    <TextView
+        android:textAppearance="@style/TextStyleBlackTab14sp"
+        android:gravity="center"
+        android:drawablePadding="@dimen/dip5"
+        android:drawableRight="@drawable/icon_arrow_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="更多" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="标题"
+        android:textAppearance="@style/TextStyleBlack16sp" />
+
+    <GridView
+        android:id="@+id/gv_movie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="@dimen/dip10"
+        android:visibility="gone">
+
+    </GridView>
+
+    <TextView
+        android:id="@+id/tv_exchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gv_movie"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dip20"
+        android:drawableLeft="@drawable/sample_footer_loading"
+        android:drawablePadding="@dimen/dip5"
+        android:gravity="center"
+        android:text="换一批"
+        android:textAppearance="@style/TextStyleGray14sp" />
+    <!--广告图片-->
+    <ImageView
+        android:visibility="gone"
+        android:scaleType="centerCrop"
+        android:id="@+id/iv_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--专栏-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tl="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="专栏"/>
+    <!--banner图-->
+    <!--广告：判断为多张图片就用banner显示，一张图就直接imageview显示；片源：直接列表显示-->
+
+</RelativeLayout>

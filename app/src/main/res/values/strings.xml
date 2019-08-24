@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Qiezi</string>
+    <string name="app_channel_id">101</string>
+<!--网络-->
+    <string name="no_network">网络异常，请先检查网络</string>
+    <string name="network_is_not_available">网络连接失败，请检查你的网络设置</string>
+    <string name="request_out_time">请求超时</string>
+    <string name="request_server_error">服务器异常</string>
+    <string name="request_failed">请求失败，请稍后再试</string>
+    <!--adapter加载-->
+    <string name="load_failed">加载失败，请点我重试</string>
+    <string name="load_end">没有更多数据</string>
+</resources>

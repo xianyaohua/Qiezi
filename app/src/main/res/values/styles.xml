@@ -1,0 +1,168 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="BaseTheme" />
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- 窗口的背景颜色 -->
+        <item name="android:windowBackground">@color/colorPrimary</item>
+
+        <item name="actionMenuTextAppearance">@style/MenuTextStyle</item>
+
+        <item name="actionMenuTextColor">@color/right_text</item>
+        <item name="alertDialogTheme">@style/MyAlertDialogStyle</item>
+        <item name="android:windowAnimationStyle">@style/HoloThemeActivityAnimation</item>
+        <!-- 设置背景透明，右滑时才能看到上一个界面，否则会看到黑屏效果-->，
+        <item name="android:windowIsTranslucent">true</item>
+        <!--波纹颜色-->
+        <!--<item name="colorControlHighlight">@color/window_bg</item>-->
+    </style>
+
+    <!--MainActivity 主界面单独设置以下主题，不透明,否则右滑不是显示上一个页面而是直接显示桌面了~-->
+    <style name="AppThemeNoTranslucent" parent="BaseTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+    </style>
+
+    <!-- 启动页Theme     <item name="android:windowBackground">@mipmap/welcome</item> -->
+    <style name="Theme.AppStartLoad" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@drawable/loading_app_bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <!--自定义加载进度框-->
+    <style name="CustomProgressDialog" parent="@style/MyCustomDialog">
+        <item name="android:windowBackground">@drawable/loading_bg</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="MyCustomDialog" parent="AlertDialog.AppCompat">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item><!--是否半透明-->
+        <item name="android:backgroundDimEnabled">false</item>  <!--背景是否变暗-->
+        <item name="android:backgroundDimAmount">0.2</item>  <!--背景的透明度-->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
+    <!--返回图标样式-->
+    <style name="toolbar_back_white" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="colorControlNormal">#ffffff</item>
+    </style>
+
+    <style name="toolbar_back_black" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="colorControlNormal">#000000</item>
+    </style>
+    <style name="ToolbarTitle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black_title</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--Activity动画-->
+    <style name="HoloThemeActivityAnimation" parent="@android:style/Animation.Activity">
+        <!-- 新的Activity启动时Enter动画 -->
+        <item name="android:activityOpenEnterAnimation">@anim/activity_open_enter</item>
+        <!-- 新的Activity启动时原有Activity的Exit动画 -->
+        <item name="android:activityOpenExitAnimation">@anim/activity_open_exit</item>
+        <!-- 新的Activity退出时原有ActivityEnter动画 -->
+        <item name="android:activityCloseEnterAnimation">@anim/activity_close_enter</item>
+        <!-- 新的Activity退出时Exit动画 -->
+        <item name="android:activityCloseExitAnimation">@anim/activity_close_exit</item>
+    </style>
+    <!--AlertDialog 颜色修改-->
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Used for the buttons -->
+        <item name="buttonBarNegativeButtonStyle">@style/Negative</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@drawable/alert_bg</item>
+        <item name="textColorAlertDialogListItem">@color/color_007AFF</item>
+        <!-- Used for the title and text -->
+        <!--<item name="android:textColorPrimary">#000</item>-->
+        <!-- Used for the background -->
+        <!--<item name="android:background">@color/colorPrimary</item>-->
+    </style>
+    <style name="Negative" parent="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <!-- 这里是修改内容区域背景颜色 -->
+        <!--<item name="android:centerDark">@color/white</item>-->
+        <item name="android:textColor">@color/black_title</item>
+    </style>
+    <!--设置menu的字体大小，颜色等-->
+    <style name="MenuTextStyle">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!--自定义字体样式-->
+    <style name="TextStyleWhite8sp">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text4_8sp</item>
+    </style>
+    <style name="TextStyleWhite12sp">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text3_12sp</item>
+    </style>
+    <style name="TextStyleWhite14sp">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text2_14sp</item>
+    </style>
+    <style name="TextStyleWhite16sp">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text1_16sp</item>
+    </style>
+
+    <style name="TextStyleGray8sp">
+        <item name="android:textColor">@color/blackGray</item>
+        <item name="android:textSize">@dimen/text4_8sp</item>
+    </style>
+    <style name="TextStyleGray12sp">
+        <item name="android:textColor">@color/blackGray</item>
+        <item name="android:textSize">@dimen/text3_12sp</item>
+    </style>
+    <style name="TextStyleGray14sp">
+        <item name="android:textColor">@color/blackGray</item>
+        <item name="android:textSize">@dimen/text2_14sp</item>
+    </style>
+    <style name="TextStyleGray16sp">
+        <item name="android:textColor">@color/blackGray</item>
+        <item name="android:textSize">@dimen/text1_16sp</item>
+    </style>
+
+    <style name="TextStyleBlack8sp">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text4_8sp</item>
+    </style>
+    <style name="TextStyleBlack12sp">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text3_12sp</item>
+    </style>
+    <style name="TextStyleBlack14sp">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text2_14sp</item>
+    </style>
+    <style name="TextStyleBlack16sp">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text1_16sp</item>
+    </style>
+
+    <style name="TextStyleBlackTab8sp">
+        <item name="android:textColor">@color/blackGray</item>
+        <item name="android:textSize">@dimen/text4_8sp</item>
+    </style>
+    <style name="TextStyleBlackTab12sp">
+        <item name="android:textColor">@color/blackGray</item>
+        <item name="android:textSize">@dimen/text3_12sp</item>
+    </style>
+    <style name="TextStyleBlackTab14sp">
+        <item name="android:textColor">@color/blackGray</item>
+        <item name="android:textSize">@dimen/text2_14sp</item>
+    </style>
+    <style name="TextStyleBlackTab16sp">
+        <item name="android:textColor">@color/blackGray</item>
+        <item name="android:textSize">@dimen/text1_16sp</item>
+    </style>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--四角的弧度-->
+    <corners android:radius="90dp"></corners>
+    <!--渐变-->
+    <gradient ></gradient>
+    <padding android:bottom="10dp"
+        android:top="10dp"></padding>
+    <!--填充的颜色-->
+    <solid android:color="#50dcdcdc" />
+    <!--描边-->
+    <stroke ></stroke>
+</shape>

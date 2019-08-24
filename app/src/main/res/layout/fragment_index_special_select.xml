@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--首页 精选-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+        android:id="@+id/iv_history"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_toStartOf="@id/iv_history"
+        android:layout_marginRight="10dp"
+        android:id="@+id/iv_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <ImageView
+        android:layout_toStartOf="@id/iv_download"
+        android:layout_marginRight="10dp"
+        android:id="@+id/iv_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:layout_toStartOf="@id/iv_scan"
+        android:gravity="center"
+        android:background="@drawable/btn_roundcorner90_gray"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"
+        android:drawableRight="@drawable/ic_launcher_background"
+        android:text="搜你想搜，看你想看"/>
+    <com.stx.xhb.androidx.XBanner
+        android:id="@+id/banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:AutoPlayTime="3000"
+        app:placeholderDrawable="@mipmap/xbanner_logo"
+        app:pointsContainerBackground="#442e2e2e"
+        app:pointsPosition="RIGHT"
+        app:tipTextSize="12sp"
+        app:isAutoPlay="true"
+        app:isShowTips="true"
+        app:isShowNumberIndicator="false"
+        app:isShowIndicatorOnlyOne="false"
+        app:pageChangeDuration="800"/>
+    <!--banner图-->
+    <!--广告：判断为多张图片就用banner显示，一张图就直接imageview显示；片源：直接列表显示-->
+
+</RelativeLayout>

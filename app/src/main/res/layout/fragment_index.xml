@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tl="http://schemas.android.com/apk/res-auto">
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/tab_channel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#666666"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        tl:tl_indicator_gravity="TOP"
+        tl:tl_textBold="SELECT"
+        tl:tl_underline_color="#1A000000"
+        tl:tl_underline_gravity="TOP"
+        tl:tl_underline_height="1dp"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:visibility="gone"
+        android:id="@+id/btn_channel"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_channel"
+        android:layout_below="@id/tab_channel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.viewpager.widget.ViewPager>
+    <!--banner图-->
+    <!--广告：判断为多张图片就用banner显示，一张图就直接imageview显示；片源：直接列表显示-->
+
+</RelativeLayout>

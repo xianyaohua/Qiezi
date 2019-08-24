@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--专栏-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <com.stx.xhb.androidx.XBanner
+        android:id="@+id/banner_mine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <GridView
+        android:id="@+id/gv_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.cardview.widget.CardView
+        android:visibility="gone"
+        tl:cardBackgroundColor="@color/redTab"
+        tl:cardCornerRadius="@dimen/dip10"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+    </androidx.cardview.widget.CardView>
+    <!--banner图-->
+    <!--广告：判断为多张图片就用banner显示，一张图就直接imageview显示；片源：直接列表显示-->
+
+</RelativeLayout>

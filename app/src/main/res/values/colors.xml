@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFff</color>
+    <color name="colorAccent">#000000</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black_title">#4A4A4A</color>
+    <color name="right_text">#007AFF</color>
+    <color name="color_007AFF">#007AFF</color>
+    <color name="window_bg">#EEF0F3</color>
+    <!--主色调为红色-->
+    <color name="redBg">#d33d3b</color>
+    <color name="redTitle">#e05e6a</color>
+    <!--主页tab颜色-->
+    <color name="redTab">#ed5e58</color>
+    <color name="redSpecial">#c66866</color>
+    <!--主字体颜色-->
+    <color name="black">#000000</color>
+    <color name="blackTab">#575757</color>
+    <color name="blackGray">#a4a4a4</color>
+    <!--20%透明度-->
+    <color name="black20">#33000000</color>
+    <color name="black10">#19000000</color>
+</resources>

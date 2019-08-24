@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--展示AV的封面和更多详细信息-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView
+        android:layout_marginRight="@dimen/dip10"
+        app:cardCornerRadius="@dimen/dip10"
+        app:cardBackgroundColor="@color/black10"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/bg"
+            android:id="@+id/iv_av_cover"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="150dp"/>
+        <TextView
+            android:background="@drawable/shape_radios90_black20"
+            android:text="89"
+            android:textAppearance="@style/TextStyleWhite12sp"
+            android:id="@+id/tv_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="description"
+            android:id="@+id/tv_description"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="播放量"
+            android:id="@+id/tv_view_count"
+            android:layout_below="@id/tv_description"
+            android:layout_marginTop="20dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="download"
+            android:id="@+id/tv_download_count"
+            android:ellipsize="end"
+            android:layout_below="@+id/tv_view_count"
+
+            android:layout_marginTop="5dp"
+            android:maxLines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_favorite_count"
+            android:ellipsize="end"
+            android:layout_marginTop="@dimen/dip5"
+            android:text="收藏"
+            android:layout_below="@+id/tv_view_count"
+            android:layout_alignParentRight="true"
+            android:maxLines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>
