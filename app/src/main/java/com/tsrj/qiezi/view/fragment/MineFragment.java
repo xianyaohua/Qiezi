@@ -15,4 +15,13 @@ public class MineFragment extends BaseFragment {
     public void onContentViewSeted() {
 
     }
+    //显示用户信息
+    public void showUserInfo(){
+
+    }
+    //显示banner图片
+    public void showBanner(){
+
+    }
+
 }
